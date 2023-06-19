@@ -16,13 +16,17 @@ namespace TresEnRaya
         static int check = 0;
         static void Main(string[] args)
         {
+            InicioDeJuego();
+        }
 
+        public static void InicioDeJuego()
+        {
             do
             {
                 Console.Clear();//Ponemos esto para limpiar la pantalla
                 Console.WriteLine("Jugador1 X:Jugador2 0");
                 Console.WriteLine("\n");
-                
+
                 if (jugador1 % 2 == 0)//Comprobaremos el turno de los jugadores cuando es par jugador2
                 {
                     Console.WriteLine("Turno para jugador 2");
